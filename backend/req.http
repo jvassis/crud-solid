@@ -1,0 +1,40 @@
+GET http://localhost:3001/clientes HTTP/1.1
+
+POST http://localhost:3001/clientes HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Carla Cristina",
+    "idade": 4
+}
+
+POST http://localhost:3001/clientes HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Ana Helena",
+    "idade": 42
+}
+
+DELETE http://localhost:3001/clientes/1 HTTP/1.1
+
+#v2
+
+POST http://localhost:3001/v2/clientes HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Ana",
+    "idade": 42
+}
+
+POST http://localhost:3001/v2/clientes HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Clara",
+    "idade": 4
+}
+
+
+GET http://localhost:3001/v2/clientes HTTP/1.1
